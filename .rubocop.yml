@@ -1,0 +1,7 @@
+AllCops:
+  Excludes:
+    - config/environments/production.rb
+    - config/initializers/backtrace_silencers.rb
+    - config/initializers/wrap_parameters.rb
+    - db/schema.rb
+    - db/seeds.rb

@@ -1,0 +1,109 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Shadae/workspace/blog/app/helpers/application_helper.rb": [
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Shadae/workspace/blog/app/helpers/home_helper.rb": [
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Shadae/workspace/blog/app/helpers/posts_helper.rb": [
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Shadae/workspace/blog/app/controllers/home_controller.rb": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Shadae/workspace/blog/app/controllers/application_controller.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Shadae/workspace/blog/app/controllers/posts_controller.rb": [
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/Shadae/workspace/blog/app/models/post.rb": [
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1388719112
+  }
+}
