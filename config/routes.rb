@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   root 'home#index'
   # priority is based upon order of creation: first created -> highest
   # See how all your routes lay out with "rake routes".
