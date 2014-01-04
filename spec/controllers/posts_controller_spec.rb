@@ -72,16 +72,16 @@ describe PostsController do
     it 'does create new post' do
       post = Post.create(title: 'The title', text: 'The content')
 
-      get :create, id: post.id, post:{
+      get :create, id: post.id, post: {
                                       title: 'The title',
-                                      text: 'The content'}
+                                      text: 'The content' }
     end
 
     it 'renders new if text is missing' do
       post = Post.create(title: 'The title', text: 'The Content')
 
-      get :create, id: post.id, post:{
-                                      title: ''}
+      get :create, id: post.id, post: {
+                                      title: '' }
 
       expect(response).to render_template(:new)
     end
@@ -91,10 +91,10 @@ describe PostsController do
     it 'does delete posts' do
       post = Post.create(title: 'The title', text: 'The Content')
 
-      delete :destroy, id: post.id, post:{
+      delete :destroy, id: post.id, post: {
                                           title: 'The title',
-                                          text: 'The content'}
-       expect(response).to redirect_to "/posts"
+                                          text: 'The content' }
+       expect(response).to redirect_to '/posts'
     end
   end
 end
