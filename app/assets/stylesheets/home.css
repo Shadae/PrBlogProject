@@ -11,3 +11,16 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.homet {
+  color: white;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: bold;
+  background: rgba(153, 153, 153, 0.6);
+  border-radius: 5px ;
+}
+
+.titlen {
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 80px;
+}
