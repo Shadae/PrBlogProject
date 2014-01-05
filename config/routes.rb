@@ -1,5 +1,8 @@
 Blog::Application.routes.draw do
   devise_for :admins, :skip => :registrations
+  devise_scope :user do
+    get "sign_in", :to => "devise/sessions#new"
+  end
   
   resources :posts do
     resources :comments

@@ -1,13 +1,29 @@
 <% if signed_in? %>
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Home</a>
+          </div>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
 
-  <h1> New Post <h1>
+    <div class="container">
+      <h1> Wanna Write? </h1>
+        <div class="well">
+          <%= render 'form' %>
+          <%= link_to 'Back', posts_path %>
+          <% else %>
+          <%= link_to('login', new_admin_session_path) %>
+        </div>
+    </div>
+      <% end %>
 
-  <%= render 'form' %>
-
-  <%= link_to 'Back', posts_path %>
-
-<% else %>
-
-  <%= link_to('login', new_admin_session_path) %>
-
-<% end %>
+ 

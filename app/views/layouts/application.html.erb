@@ -9,7 +9,11 @@
 </head>
 <body>
 <% if signed_in? %>
-  <blockquote class="logh"><%= link_to('Logout Admin', destroy_admin_session_path, method: :delete) %></blockquote>
+  <blockquote class="logh">
+    <%= link_to('Logout Admin', destroy_admin_session_path, method: :delete) %><br>
+    <%= link_to "Write New Blog", new_post_path %>
+
+  </blockquote>
 <% else %>
   <blockquote class="logh"><%= link_to('Admin Login', new_admin_session_path) %></blockquote>
 <% end %>
