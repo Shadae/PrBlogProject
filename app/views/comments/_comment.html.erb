@@ -1,6 +1,4 @@
-
-
-  <% unless comment.id.nil? %>
+<% unless comment.id.nil? %>
   <h3>Comment <%= comment.id %> 
     <small> <%= comment.created_at %></small>
   </h3>
@@ -9,4 +7,8 @@
   <p>
     <%= comment.body %>
   </p>
-  <% end %>
+  <%= link_to 'Delete Comment', [comment.post, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+<% end %>
+
