@@ -1,3 +1,5 @@
+# Comment Controller
+# Author: Dae
 require 'spec_helper'
 
 describe CommentsController do
@@ -13,8 +15,10 @@ describe CommentsController do
 
   describe 'DELETE #destroy' do
     it 'does delete comments' do
-      post = Post.create( title: 'The title', text: 'The Content')
-      comment = Comment.create( body: 'The content', commenter: 'name', post_id: post.id )
+      post = Post.create(title: 'The title', text: 'The Content')
+      comment = Comment.create(body: 'The content',
+                               commenter: 'name',
+                               post_id: post.id)
 
       delete :destroy, post_id: post.id, id: comment.id
 

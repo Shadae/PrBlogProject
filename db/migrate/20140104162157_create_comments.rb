@@ -1,3 +1,5 @@
+# Comment Migration
+# Author: Dae
 class CreateComments < ActiveRecord::Migration
   def change
     create_table :comments do |t|
