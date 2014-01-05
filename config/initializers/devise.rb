@@ -4,13 +4,17 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = '7eba30481c6f236307e3f8cd2c028f77c5abefa2d41e1741e09bbf042af308d13404d676779492e61a6f21b000db875763aca248119b2059b9c1800f858935ca'
+  config.secret_key = '7eba30481c6f236307e3f8cd2c028f77c5a
+                       befa2d41e1741e09bbf042af308d13404d6
+                       76779492e61a6f21b000db875763aca2481
+                       19b2059b9c1800f858935ca'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'please-change-me-at-config
+                          -initializers-devise@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -26,12 +30,14 @@ Devise.setup do |config|
   # just :email. You can configure it to use [:username, :subdomain], so for
   # authenticating a user, both parameters are required. Remember that those
   # parameters are used only when authenticating and not when retrieving from
-  # session. If you need permissions, you should implement that in a before filter.
+  # session. If you need permissions, you should implement that in a before 
+  # filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
   # config.authentication_keys = [ :email ]
 
-  # Configure parameters from the request object used for authentication. Each entry
+  # Configure parameters from the request object used for authentication. Each 
+  # entry
   # given should be a request method and it will automatically be passed to the
   # find_for_authentication method and considered in your model lookup. For instance,
   # if you set :request_keys to [:subdomain], :subdomain will be used on authentication.

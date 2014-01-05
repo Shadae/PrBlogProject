@@ -2,6 +2,7 @@
   "RSpec": {
     "coverage": {
       "/Users/Shadae/workspace/blog/app/models/admin.rb": [
+        null,
         1,
         null,
         null,
@@ -14,6 +15,17 @@
         null,
         null,
         1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/Shadae/workspace/blog/app/helpers/comments_helper.rb": [
@@ -140,6 +152,6 @@
         null
       ]
     },
-    "timestamp": 1388894832
+    "timestamp": 1388952285
   }
 }

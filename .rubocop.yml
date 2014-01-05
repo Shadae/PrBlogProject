@@ -5,3 +5,5 @@ AllCops:
     - config/initializers/wrap_parameters.rb
     - db/schema.rb
     - db/seeds.rb
+    - config/initializers/devise.rb
+    - db/migrate/20140105040624_devise_create_admins.rb
