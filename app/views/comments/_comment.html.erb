@@ -1,6 +1,6 @@
 <% unless comment.id.nil? %>
   <h3>Comment <%= comment.id %> 
-    <small> <%= comment.created_at %></small>
+    <small> <%= comment.created_at.strftime("%I:%M %p %b %d") %></small>
   </h3>
   <strong>By:</strong>
     <%= comment.commenter %>

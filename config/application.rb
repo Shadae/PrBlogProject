@@ -8,5 +8,6 @@ Bundler.require(:default, Rails.env)
 
 module Blog
   class Application < Rails::Application
+    config.assets.initialize_on_precompile = false
   end
 end

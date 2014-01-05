@@ -48,9 +48,9 @@
         
           <!-- the actual blog post: title/author/date/content -->
           <h1><%= @post.title %></h1>
-          <p class="lead">by <a href="index.php">Start Bootstrap</a></p>
+          <p class="lead">by <a href="index.php">Shadae</a></p>
           <hr>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+          <p><span class="glyphicon glyphicon-time"></span>  Post Created at <%= @post.created_at.strftime("%I:%M %p %b %d") %></p>
           <hr>
           <img src="http://placehold.it/900x300" class="img-responsive">
           <hr>

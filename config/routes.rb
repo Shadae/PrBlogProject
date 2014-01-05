@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  devise_for :admins, :skip => :registrations
+  
   resources :posts do
     resources :comments
   end

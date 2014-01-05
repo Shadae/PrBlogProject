@@ -1,6 +1,14 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Shadae/workspace/blog/app/models/admin.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
       "/Users/Shadae/workspace/blog/app/helpers/application_helper.rb": [
         null,
         null,
@@ -66,7 +74,6 @@
       "/Users/Shadae/workspace/blog/app/controllers/posts_controller.rb": [
         null,
         null,
-        null,
         1,
         1,
         1,
@@ -121,7 +128,6 @@
       "/Users/Shadae/workspace/blog/app/models/post.rb": [
         null,
         null,
-        null,
         1,
         1,
         1,
@@ -134,6 +140,6 @@
         null
       ]
     },
-    "timestamp": 1388891335
+    "timestamp": 1388894832
   }
 }
