@@ -1,11 +1,12 @@
- 
-<% @post.comments.each do |comment| %>
+
+
+  <% unless comment.id.nil? %>
   <h3>Comment <%= comment.id %> 
-    <small> <%=comment.created_at %></small>
+    <small> <%= comment.created_at %></small>
   </h3>
   <strong>By:</strong>
     <%= comment.commenter %>
   <p>
     <%= comment.body %>
   </p>
-<% end %>
+  <% end %>

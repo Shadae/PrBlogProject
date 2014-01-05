@@ -75,15 +75,12 @@
           <hr>
 
           <!-- the comments -->
-        <% @post.comments.each do |comment| %>
-        <h3>Comment<%= comment.id %> <small><%=comment.created_at %></small></h3>
-        <strong>By:</strong>
-        <%= comment.commenter %>
-          </p>
-        <p>
-        <%= comment.body %>
-        </p>
-        <% end %>
+           
+           <%= render @post.comments %>
+
+          <hr>
+        </div>
+
 
         
         <div class="col-lg-4">
