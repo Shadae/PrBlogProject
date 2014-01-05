@@ -1,5 +1,13 @@
-<h1> New Post <h1>
+<% if signed_in? %>
 
-<%= render 'form' %>
+  <h1> New Post <h1>
 
-<%= link_to 'Back', posts_path %>
+  <%= render 'form' %>
+
+  <%= link_to 'Back', posts_path %>
+
+<% else %>
+
+  <%= link_to('login', new_admin_session_path) %>
+
+<% end %>

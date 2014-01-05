@@ -8,6 +8,12 @@
 
 </head>
 <body>
+<% if signed_in? %>
+  <blockquote class="logh"><%= link_to('Logout Admin', destroy_admin_session_path, method: :delete) %></blockquote>
+<% else %>
+  <blockquote class="logh"><%= link_to('Admin Login', new_admin_session_path) %></blockquote>
+<% end %>
+
 <% if notice %>
   <p class="alert alert-notice"><%= notice %></p>
 <% end %>
