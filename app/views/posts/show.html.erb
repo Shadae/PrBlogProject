@@ -33,7 +33,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/posts/index">Blog Index</a></li>
+            <li><a href="/posts">Blog Index</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
@@ -51,7 +51,7 @@
           <p><span class="glyphicon glyphicon-time"></span>  Post Created at <%= @post.created_at.strftime("%I:%M %p %b %d") %></p>
           <hr>
           <!-- shows picture for post -->
-          <%= image_tag(@post.pic_upload_url, size: "600x400") if @post.pic_upload.present? %>
+          <%= image_tag(@post.pic_upload_url, size: "750x300") if @post.pic_upload.present? %>
           <!-- <img src="http://placehold.it/900x300" class="img-responsive"> -->
           <hr>
           <p class="lead"><%= @post.text %></p>

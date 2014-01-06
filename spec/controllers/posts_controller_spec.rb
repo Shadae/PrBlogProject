@@ -95,7 +95,7 @@ describe PostsController do
       delete :destroy, id: post.id, post: {
                                           title: 'The title',
                                           text: 'The content' }
-       expect(response).to redirect_to '/posts'
+      expect(response).to redirect_to '/posts'
     end
   end
 end
