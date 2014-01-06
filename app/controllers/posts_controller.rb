@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
-    if params.key?(:post) && @post.update(params[:post].permit(:title, :text))
+    if params.key?(:post) && @post.update(params[:post].permit(:title, :text, :pic_upload, :remove_pic_upload))
       redirect_to @post
     else
       render 'edit'
@@ -47,6 +47,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :text)
+    params.require(:post).permit(:title, :text, :pic_upload)
   end
 end
