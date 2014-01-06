@@ -33,9 +33,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <!-- <li><a href="/">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li> -->
+            <li><a href="http://twitter.com/SlimShadae" class="tops"><img src='http://www.iconsdb.com/icons/preview/white/twitter-l.png' height="20px" width="20px" ></a></li>
+            <li><a href="http://www.linkedin.com/in/shadae/" class="tops"><img src='http://www.iconsdb.com/icons/preview/white/linkedin-3-l.png' height="20px" width="20px"</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
@@ -55,7 +55,7 @@
         <% @posts.reverse.each do |post| %>
           <div class="col-md-4 portfolio-item">
             <!-- <a href="#project-link"> -->
-            <%= image_tag(post.pic_upload_url, size: "300x100") if post.pic_upload.present? %>
+            <%= image_tag(post.pic_upload_url, size: "300x150") if post.pic_upload.present? %>
               <!-- <img class="img-responsive" src="http://placehold.it/700x400"> -->
             </a>
             <h3><%= link_to post.title, post_path(post) %></a></h3>
@@ -76,9 +76,6 @@
             <li><a href="#">&laquo;</a></li>
             <li class="active"><a href="#">1</a></li>
             <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
             <li><a href="#">&raquo;</a></li>
           </ul>        
         </div>
