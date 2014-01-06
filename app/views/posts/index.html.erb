@@ -55,7 +55,7 @@
         <% @posts.reverse.each do |post| %>
           <div class="col-md-4 portfolio-item">
             <!-- <a href="#project-link"> -->
-            <%= image_tag(post.pic_upload_url, size: "300x200") if post.pic_upload.present? %>
+            <%= image_tag(post.pic_upload_url, size: "300x100") if post.pic_upload.present? %>
               <!-- <img class="img-responsive" src="http://placehold.it/700x400"> -->
             </a>
             <h3><%= link_to post.title, post_path(post) %></a></h3>
