@@ -52,7 +52,9 @@
           <hr>
           <p><span class="glyphicon glyphicon-time"></span>  Post Created at <%= @post.created_at.strftime("%I:%M %p %b %d") %></p>
           <hr>
-          <img src="http://placehold.it/900x300" class="img-responsive">
+          <!-- shows picture for post -->
+          <%= image_tag(@post.pic_upload_url, size: "500x300") if @post.pic_upload.present? %>
+          <!-- <img src="http://placehold.it/900x300" class="img-responsive"> -->
           <hr>
           <p class="lead"><%= @post.text %></p>
 
@@ -80,9 +82,11 @@
 
           <hr>
         </div>
+      </div>
+      
 
 
-        
+        <!-- 
         <div class="col-lg-4">
           <div class="well">
             <h4>Blog Search</h4>
@@ -91,9 +95,9 @@
               <span class="input-group-btn">
                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
               </span>
-            </div><!-- /input-group -->
-          </div><!-- /well -->
-          <div class="well">
+            </div> --><!-- /input-group -->
+          <!-- </div> --><!-- /well -->
+          <!-- div class="well">
             <h4>Popular Blog Categories</h4>
               <div class="row">
                 <div class="col-lg-6">
@@ -113,13 +117,13 @@
                   </ul>
                 </div>
               </div>
-          </div><!-- /well -->
-          <div class="well">
+          </div> --><!-- /well -->
+          <!-- <div class="well">
             <h4>Views</h4>
             <p>Bootstrap's default wells work great for side widgets! What is a widget anyways...?</p>
-          </div><!-- /well -->
-        </div>
-      </div>
+          </div> --><!-- /well -->
+        <!-- </div>
+      </div> -->
       
       <hr>
       
