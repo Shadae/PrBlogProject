@@ -51,7 +51,7 @@
           <p><span class="glyphicon glyphicon-time"></span>  Post Created at <%= @post.created_at.strftime("%I:%M %p %b %d") %></p>
           <hr>
           <!-- shows picture for post -->
-          <%= image_tag(@post.pic_upload_url, size: "750x300", link_to(@post)) if @post.pic_upload.present? %>
+          <%= image_tag(@post.pic_upload_url, size: "750x300") if @post.pic_upload.present? %>
           <!-- <img src="http://placehold.it/900x300" class="img-responsive"> -->
           <hr>
           <p class="lead"><%= @post.text %></p>
