@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap-wysihtml5/b3
  */
  /* Override Bootstrap 3 font locations */
   @font-face {
@@ -20,3 +21,4 @@
   url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
   url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
   }
+
