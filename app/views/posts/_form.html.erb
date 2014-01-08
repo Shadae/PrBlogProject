@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="/assets/bootstrap-wysihtml5.css"></link>
-    <script src="/assets/bootstrap-wysihtml5.js"></script>
-  </head>
+
   
     <%= form_for @post, :html => {:multipart => true} do |f| %>
       <% if @post.errors.any? %>
@@ -25,7 +20,7 @@
          
           <p>
             <%= f.label :text %><br>
-            <%= f.text_area(:text, size:"102px x 300px", class: 'wysihtml5', id: 'some-textarea') %>
+            <%= f.text_area(:text, cols: 102, rows: 80, class: 'wysihtml5', id: 'some-textarea') %>
           </p>
           <p>
           <label>Post Picture</label>
@@ -43,20 +38,3 @@
             <%= f.submit %>
           </p>
           <% end %>
-<script type="text/javascript">
-  $(document).ready(function(){
-
-$('#some-textarea').wysihtml5({
-  "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
-  "emphasis": true, //Italics, bold, etc. Default true
-  "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
-  "html": false, //Button which allows you to edit the generated HTML. Default false
-  "link": true, //Button to insert a link. Default true
-  "image": true, //Button to insert an image. Default true,
-  "color": false, //Button to change color of font  
-  "stylesheets": [] 
-});
-
-  })
-</script>
- 

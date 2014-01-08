@@ -1,4 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap-wysihtml5.css"></link>
+    <script src="/assets/jquery-1.10.2.js"></script>
+    <script src="/assets/bootstrap-wysihtml5.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      $('#some-textarea').wysihtml5({
+        "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
+        "emphasis": true, //Italics, bold, etc. Default true
+        "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+        "html": false, //Button which allows you to edit the generated HTML. Default false
+        "link": true, //Button to insert a link. Default true
+        "image": true, //Button to insert an image. Default true,
+        "color": false, //Button to change color of font  
+        "stylesheets": [] 
+      });
+
+    })
+</script>
+ 
+  </head>
 
   <% if signed_in? %>
 
