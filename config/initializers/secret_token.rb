@@ -1,7 +1,1 @@
-# Secret key encripted
-secret = ENV['BLOG_KEY']
-if secret.length < 30
-  fail 'Secret token cannot be loaded'
-else
-  Blog::Application.config.secret_key_base = secret
-end
+Blog::Application.config.secret_key_base = 'de3beebd4630d03763dcc4635ee0b3b918db2600f21ac0d723772a6939faeecc8f70fd5766056a9443af6168193ec8b54f4b96dc7720261c49c689fccef34981'

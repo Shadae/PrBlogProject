@@ -7,3 +7,6 @@ AllCops:
     - db/seeds.rb
     - config/initializers/devise.rb
     - db/migrate/20140105040624_devise_create_admins.rb
+    - config/initializers/carrierwave.rb
+    - app/uploaders/pic_upload_uploader.rb
+    - config/initializers/secret_token.rb

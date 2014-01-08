@@ -2,9 +2,22 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+ruby '2.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3', '1.3.8'
+  gem 'rspec-rails' 
+  gem 'guard-rspec'
+  gem 'rubocop'
+  gem 'simplecov', :require => false, :group => :test
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -27,19 +40,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'rspec-rails' 
-
-gem 'guard-rspec'
-
-gem 'rubocop'
-
-gem 'simplecov', :require => false, :group => :test
-
+# Authorization
 gem 'devise'
 
+# Imaging
 gem 'carrierwave'
-
-gem "mini_magick"
 
 gem "fog"
 

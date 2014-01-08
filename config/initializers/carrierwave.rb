@@ -1,8 +1,8 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     :provider               => 'AWS',                        # required
-    :aws_access_key_id      => 'AKIAIHNNTBQ5G5F5AVRQ',                        # required
-    :aws_secret_access_key  => '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',                        # required
+    :aws_access_key_id      => ENV['AWS_ACCESS_KEY'],                        # required
+    :aws_secret_access_key  => ENV['AWS_SECRET_KEY'],                        # required
     :region                 => 'us-west-2',                  # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'blog-vacay-project'                     # required
