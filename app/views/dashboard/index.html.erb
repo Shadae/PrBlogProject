@@ -1,0 +1,36 @@
+<div class="container">
+  <h1 id="admin">Admin Dashboard</h1>
+  <table class="table">
+    <tr>
+      <th>Total Visitors:</th>
+    </tr>
+    <tr>
+      <td><%= Visitor.total_visitors %></td>
+    </tr>
+  </table>
+
+
+  <table class="table">
+    <tr>
+      <th>Unique Visitors:</th>
+      <th>Returning Visitors:</th>
+    </tr>
+
+    <tr>
+      <td><%= Visitor.unique_visitors.count %></td>
+      <td><%= Visitor.return_visitors.count %></td>
+    </tr>
+  </table>
+
+  <table class="table">
+    <tr>
+      <th>Mobile Visitors:</th>
+      <th>Non-Mobile Visitors:</th>
+    </tr>
+
+    <tr>
+      <td><%= Visitor.mobile_users.count %></td>
+      <td><%= Visitor.non_mobile_users.count %></td>
+    </tr>
+  </table>
+</div>

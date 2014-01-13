@@ -11,6 +11,8 @@ group :development do
   gem 'guard-rspec'
   gem 'rubocop'
   gem 'simplecov', :require => false, :group => :test
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do
@@ -47,6 +49,10 @@ gem 'devise'
 gem 'carrierwave'
 
 gem "fog"
+
+gem 'simplecov-gem-adapter'
+
+gem 'factory_girl_rails'
 
 gem "bootstrap-wysihtml5-rails"
 

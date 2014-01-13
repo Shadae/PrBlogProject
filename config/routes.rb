@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  get 'dashboard' => 'dashboard#index', as: 'dashboard'
+
   devise_for :admins, skip: :registrations
   devise_scope :user do
     get 'sign_in', to: 'devise/sessions#new'
@@ -7,7 +9,10 @@ Blog::Application.routes.draw do
   resources :posts do
     resources :comments
   end
+
   root 'home#index'
+
+  
   # priority is based upon order of creation: first created -> highest
   # See how all your routes lay out with "rake routes".
 
