@@ -21,4 +21,6 @@ class Visitor < ActiveRecord::Base
   def self.total_visitors
     sum(:page_visits)
   end
+
+  
 end
