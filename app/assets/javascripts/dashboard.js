@@ -40,7 +40,7 @@
       // context.strokeStyle = 'black'
       // context.stroke();
       context.font = '12pt Arial';
-      context.strokeStyle = 'black';
+      context.strokeStyle = 'grey';
       context.fillText( label , x , 20);
     
 

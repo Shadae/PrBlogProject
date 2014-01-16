@@ -61,8 +61,21 @@
           <td id="nmobvist"><%= Visitor.non_mobile_users.count %></td>
         </tr>
       </table>
+      <table class="table">
+        <tr>
+          <th>View Chart <span class="glyphicon glyphicon-arrow-down"></span></th>
+        </tr>
+        <tr>
+          <td>
+            <canvas id='canvas' width=950 height=100 >
+            </canvas>
+          </td>
+        </tr>
+      </table>
+      
 
-      <canvas id='canvas' width=950 height=100></canvas>
+
+      
     </div>
     </body>
   </html>
