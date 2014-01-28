@@ -1,4 +1,8 @@
-
+ <script type="text/javascript">
+        $('.wysihtml5').each(function(i, elem) {
+        $(elem).wysihtml5();
+                    });
+     </script>
   
     <%= form_for @post, :html => {:multipart => true} do |f| %>
       <% if @post.errors.any? %>
@@ -39,8 +43,4 @@
           </p>
           <% end %>
 
-      <script type="text/javascript">
-        $('.wysihtml5').each(function(i, elem) {
-        $(elem).wysihtml5();
-                    });
-      </script>
+     
