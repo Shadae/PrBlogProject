@@ -20,7 +20,7 @@
          
           <p>
             <%= f.label :text %><br>
-            <%= f.text_area(:text, cols: 102, rows: 80, class: 'wysihtml5', id: 'some-textarea') %>
+            <%= f.text_area(:text, cols: 102, rows: 80, class: 'wysihtml5', id: 'some-textarea', placeholder: "What do you want to say?") %>
           </p>
           <p>
           <label>Post Picture</label>
@@ -38,3 +38,9 @@
             <%= f.submit %>
           </p>
           <% end %>
+
+      <script type="text/javascript">
+        $('.wysihtml5').each(function(i, elem) {
+        $(elem).wysihtml5();
+                    });
+      </script>
