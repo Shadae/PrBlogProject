@@ -54,7 +54,8 @@ gem 'simplecov-gem-adapter'
 
 gem 'factory_girl_rails'
 
-gem "bootstrap-wysihtml5-rails"
+gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
+                              :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
