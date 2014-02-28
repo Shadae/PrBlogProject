@@ -7,15 +7,13 @@
     <%= form_for @post, :html => {:multipart => true} do |f| %>
       <% if @post.errors.any? %>
         <div id="error_explanation">
-          <%= pluralize(@post.errors.count, "error") %> prohibited
-            this post from being saved:
+        <%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:
           <ul>
-          <% @post.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-          </ul>
-          </div>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
         <% end %>
+          </ul> </div>
+      <% end %>
 
           <p>
             <%= f.label :title %><br>
